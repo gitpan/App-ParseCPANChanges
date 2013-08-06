@@ -17,7 +17,7 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "App-ParseCPANChanges",
-  "dist_version" => "0.01",
+  "dist_version" => "0.02",
   "license" => "perl",
   "module_name" => "App::ParseCPANChanges",
   "recommends" => {},
@@ -25,17 +25,13 @@ my %module_build_args = (
   "requires" => {
     "CPAN::Changes" => 0,
     "Data::Structure::Util" => 0,
+    "Perinci::CmdLine" => 0,
     "perl" => "5.010001"
   },
   "script_files" => [
     "bin/parse-cpan-changes"
   ],
-  "test_requires" => {
-    "Capture::Tiny" => 0,
-    "Test::More" => "0.88",
-    "Test::Script" => "1.05",
-    "blib" => 0
-  }
+  "test_requires" => {}
 );
 
 

@@ -2,7 +2,7 @@ NAME
     App::ParseCPANChanges - Parse CPAN Changes file
 
 VERSION
-    version 0.01
+    version 0.02
 
 DESCRIPTION
     This distribution provides a simple command-line wrapper for
