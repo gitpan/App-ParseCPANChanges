@@ -2,28 +2,16 @@ NAME
     App::ParseCPANChanges - Parse CPAN Changes file
 
 VERSION
-    version 0.02
+    version 0.03
 
 DESCRIPTION
     This distribution provides a simple command-line wrapper for
-    CPAN::Changes.
-
-SEE ALSO
-    CPAN::Changes
-
-AUTHOR
-    Steven Haryanto <stevenharyanto@gmail.com>
-
-COPYRIGHT AND LICENSE
-    This software is copyright (c) 2013 by Steven Haryanto.
-
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    CPAN::Changes. See parse-cpan-changes for more details.
 
 FUNCTIONS
-    None are exported by default, but they are exportable.
-
   parse_cpan_changes(%args) -> [status, msg, result, meta]
+    Parse CPAN Changes file.
+
     Arguments ('*' denotes required arguments):
 
     *   file => *str*
@@ -39,4 +27,40 @@ FUNCTIONS
     message, or 'OK' if status is 200. Third element (result) is optional,
     the actual result. Fourth element (meta) is called result metadata and
     is optional, a hash that contains extra information.
+
+SEE ALSO
+    CPAN::Changes
+
+    CPAN::Changes::Spec
+
+    An alternative way to manage your Changes using INI master format:
+    Module::Metadata::Changes.
+
+    Dist::Zilla plugin to check your Changes before build:
+    Dist::Zilla::Plugin::CheckChangesHasContent,
+    Dist::Zilla::Plugin::CheckChangeLog.
+
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/App-ParseCPANChanges>.
+
+SOURCE
+    Source repository is at
+    <https://github.com/sharyanto/perl-App-ParseCPANChanges>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    http://rt.cpan.org/Public/Dist/Display.html?Name=App-ParseCPANChanges
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2013 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 
